@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { FormsModule } from '@angular/forms';
-
+//Servicios
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -21,11 +22,13 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent
 
   ],
+  // Todos los modulos van en los imports
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
